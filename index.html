@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"/> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>qwertyui.DEV | Full Stack Developer</title>
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script> -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <!-- <script>
-window.tailwind = window.tailwind || {};
-</script> -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script>
-        window.tailwind = window.tailwind || {};
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHAMANTH.DEV | Full Stack Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -100,444 +88,270 @@ window.tailwind = window.tailwind || {};
                         "body-md": ["Inter", "sans-serif"]
                     },
                     "fontSize": {
-                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "label-sm": ["12px", { "lineHeight": "1", "fontWeight": "600" }],
-                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "800" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "code-md": ["14px", { "lineHeight": "1.5", "fontWeight": "500" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "code-md": ["14px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
                     }
                 },
             },
         }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+<style>
         body {
             background-color: #0e131f;
             color: #dde2f3;
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-
         .content-card {
             background: #161c28;
             border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.3s ease;
         }
-
         .content-card:hover {
             border-color: rgba(180, 197, 255, 0.3);
             background: #1a202c;
         }
-
         .hero-title {
             background: linear-gradient(to bottom, #ffffff 30%, #b4c5ff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: 'Sora', sans-serif;
         }
-
         .skill-badge {
             font-family: 'JetBrains Mono', monospace;
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.2s ease;
         }
-
         .skill-badge:hover {
             background: rgba(180, 197, 255, 0.1);
             border-color: #b4c5ff;
             color: #b4c5ff;
         }
-
         .glow-sphere {
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 600px;
+            height: 600px;
             background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
             pointer-events: none;
             z-index: -1;
         }
-
         @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
-
         .animate-subtle-float {
             animation: float 4s ease-in-out infinite;
         }
     </style>
 </head>
-
 <body class="font-body-md text-on-surface">
-    <!-- Transparent Floating Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-transparent">
-        <div class="flex justify-between items-center px-8 md:px-xl py-6 max-w-container-max mx-auto">
-            <div class="font-display-lg text-headline-md tracking-tighter text-white font-extrabold uppercase">qwertyui
-            </div>
-            <div class="hidden md:flex gap-lg items-center">
-                <a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]"
-                    href="#experience">Experience</a>
-                <a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]"
-                    href="#projects">Projects</a>
-                <a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]"
-                    href="#stack">Stack</a>
-                <a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]"
-                    href="#contact">Contact</a>
-            </div>
-            <div class="flex items-center">
-                <button
-                    class="bg-white/5 border border-white/10 text-white backdrop-blur-md px-md py-2.5 rounded-full font-bold text-xs tracking-widest hover:bg-white/10 transition-all uppercase">HIRE
-                    ME</button>
-            </div>
-        </div>
-    </nav>
-    <!-- Streamlined Hero Section -->
-    <section class="relative min-h-screen flex flex-col items-center justify-center pt-0 px-gutter text-center">
-        <div class="glow-sphere top-[0%] left-[10%] opacity-40"></div>
-        <div class="glow-sphere bottom-[0%] right-[10%] opacity-30"></div>
-        <div class="max-w-5xl mx-auto z-10">
-            <div class="mb-8">
-                <span class="font-label-sm text-primary/80 tracking-[0.4em] text-[10px] uppercase">
-                    Engineering the Future
-                </span>
-            </div>
-            <h1 class="font-display-lg text-5xl md:text-8xl hero-title mb-8 leading-[0.95]">
-                FULL STACK<br />DEVELOPER
-            </h1>
-            <p
-                class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant/80 max-w-2xl mx-auto mb-12 leading-relaxed">
-                Specializing in mission-critical manufacturing systems and enterprise-grade software architectures.
-                Currently digitizing aircraft workflows at <span class="text-primary font-semibold">CSIR-NAL</span>.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-md items-center justify-center">
-                <a class="w-full sm:w-auto bg-primary text-on-primary px-xl py-4 rounded-full font-bold flex items-center justify-center gap-sm hover:shadow-[0_0_40px_rgba(37,99,235,0.25)] transition-all"
-                    href="#projects">
-                    Explore My Work
-                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                </a>
-                <a class="w-full sm:w-auto px-xl py-4 rounded-full font-bold border border-white/10 hover:bg-white/5 transition-all text-center text-white"
-                    href="#contact">
-                    Let's Connect
-                </a>
-            </div>
-        </div>
-        <!-- Minimal background accents -->
-        <div class="absolute inset-0 -z-10 pointer-events-none opacity-10">
-            <div
-                class="absolute top-[20%] left-[20%] w-[1px] h-64 bg-gradient-to-b from-transparent via-primary to-transparent">
-            </div>
-            <div
-                class="absolute bottom-[20%] right-[20%] w-[1px] h-64 bg-gradient-to-b from-transparent via-secondary to-transparent">
-            </div>
-        </div>
-    </section>
-    <!-- Main Grid Content -->
-    <main class="max-w-container-max mx-auto px-gutter py-xl">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
-            <!-- Sidebar Info -->
-            <aside class="lg:col-span-4 space-y-xl">
-                <!-- Role Card -->
-                <div class="content-card p-lg rounded-2xl border-primary/20 shadow-xl">
-                    <div class="flex items-center gap-sm mb-lg">
-                        <div class="w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_8px_#b4c5ff]"></div>
-                        <span class="font-label-sm text-primary uppercase tracking-widest text-xs">Current Role</span>
+<!-- Transparent Floating Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-transparent">
+<div class="flex justify-between items-center px-8 md:px-xl py-6 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-md tracking-tighter text-white font-extrabold uppercase">SHAMANTH</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]" href="#experience">Experience</a>
+<a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]" href="#stack">Stack</a>
+<a class="text-on-surface-variant hover:text-white transition-colors font-medium text-xs uppercase tracking-[0.2em]" href="#contact">Contact</a>
+</div>
+<div class="flex items-center">
+<button class="bg-white/5 border border-white/10 text-white backdrop-blur-md px-md py-2.5 rounded-full font-bold text-xs tracking-widest hover:bg-white/10 transition-all uppercase">HIRE ME</button>
+</div>
+</div>
+</nav>
+<!-- Streamlined Hero Section -->
+<section class="relative min-h-screen flex flex-col items-center justify-center pt-0 px-gutter text-center">
+<div class="glow-sphere top-[0%] left-[10%] opacity-40"></div>
+<div class="glow-sphere bottom-[0%] right-[10%] opacity-30"></div>
+<div class="max-w-5xl mx-auto z-10">
+<div class="mb-8">
+<span class="font-label-sm text-primary/80 tracking-[0.4em] text-[10px] uppercase">
+                Engineering the Future
+            </span>
+</div>
+<h1 class="font-display-lg text-5xl md:text-8xl hero-title mb-8 leading-[0.95]">
+            FULL STACK<br/>DEVELOPER
+        </h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant/80 max-w-2xl mx-auto mb-12 leading-relaxed">
+            Specializing in mission-critical manufacturing systems and enterprise-grade software architectures. Currently digitizing aircraft workflows at <span class="text-primary font-semibold">CSIR-NAL</span>.
+        </p>
+<div class="flex flex-col sm:flex-row gap-md items-center justify-center">
+<a class="w-full sm:w-auto bg-primary text-on-primary px-xl py-4 rounded-full font-bold flex items-center justify-center gap-sm hover:shadow-[0_0_40px_rgba(37,99,235,0.25)] transition-all" href="#projects">
+                Explore My Work
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto px-xl py-4 rounded-full font-bold border border-white/10 hover:bg-white/5 transition-all text-center text-white" href="#contact">
+                Let's Connect
+            </a>
+</div>
+</div>
+<!-- Minimal background accents -->
+<div class="absolute inset-0 -z-10 pointer-events-none opacity-10">
+<div class="absolute top-[20%] left-[20%] w-[1px] h-64 bg-gradient-to-b from-transparent via-primary to-transparent"></div>
+<div class="absolute bottom-[20%] right-[20%] w-[1px] h-64 bg-gradient-to-b from-transparent via-secondary to-transparent"></div>
+</div>
+</section>
+<!-- Main Grid Content -->
+<main class="max-w-container-max mx-auto px-gutter py-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Sidebar Info -->
+<aside class="lg:col-span-4 space-y-xl">
+<!-- Role Card -->
+<div class="content-card p-lg rounded-2xl border-primary/20 shadow-xl">
+<div class="flex items-center gap-sm mb-lg">
+<div class="w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_8px_#b4c5ff]"></div>
+<span class="font-label-sm text-primary uppercase tracking-widest text-xs">Current Role</span>
+</div>
+<div class="mb-md">
+<h3 class="font-headline-md text-headline-md text-white mb-xs">Project Associate</h3>
+<p class="font-body-md text-primary/80 font-medium">CSIR-NAL, Bangalore</p>
+</div>
+<div class="space-y-md">
+<p class="font-body-md text-on-surface-variant leading-relaxed">Leading the transition from manual logs to a digitized ecosystem for aircraft manufacturing as a solo developer.</p>
+<div class="flex items-center gap-sm text-on-surface-variant/70 font-label-sm text-xs">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                        Jan 2025 - Present
                     </div>
-                    <div class="mb-md">
-                        <h3 class="font-headline-md text-headline-md text-white mb-xs">Project Associate</h3>
-                        <p class="font-body-md text-primary/80 font-medium">CSIR-NAL, Bangalore</p>
-                    </div>
-                    <div class="space-y-md">
-                        <p class="font-body-md text-on-surface-variant leading-relaxed">Leading the transition from
-                            manual logs to a digitized ecosystem for aircraft manufacturing as a solo developer.</p>
-                        <div class="flex items-center gap-sm text-on-surface-variant/70 font-label-sm text-xs">
-                            <span class="material-symbols-outlined text-sm">calendar_today</span>
-                            Jan 2025 - Present
-                        </div>
-                    </div>
-                    <div class="mt-lg pt-lg border-t border-white/5">
-                        <span class="font-label-sm text-on-surface-variant uppercase text-xs tracking-wider">Key Focus
-                            Area</span>
-                        <div class="flex flex-wrap gap-2 mt-sm">
-                            <span class="skill-badge px-3 py-1 rounded text-xs">ERP System</span>
-                            <span class="skill-badge px-3 py-1 rounded text-xs">Industrial IoT</span>
-                            <span class="skill-badge px-3 py-1 rounded text-xs">DevOps</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bio -->
-                <div class="space-y-md px-base">
-                    <h2 class="font-headline-lg text-headline-lg text-white">Who I Am</h2>
-                    <p class="font-body-md text-on-surface-variant leading-relaxed">
-                        I am a developer who thrives at the intersection of complex logic and user-centric design. With
-                        a background in aircraft manufacturing systems, I understand the importance of <span
-                            class="text-white">precision, reliability, and scalability</span>.
-                    </p>
-                    <div class="pt-md">
-                        <h4 class="font-label-sm text-secondary uppercase tracking-widest text-xs mb-md">Tech Interests
-                        </h4>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-sm text-on-surface-variant group">
-                                <span
-                                    class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">memory</span>
-                                <span class="font-body-md">Distributed Systems Architecture</span>
-                            </li>
-                            <li class="flex items-center gap-sm text-on-surface-variant group">
-                                <span
-                                    class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">neurology</span>
-                                <span class="font-body-md">AI &amp; Natural Language Processing</span>
-                            </li>
-                            <li class="flex items-center gap-sm text-on-surface-variant group">
-                                <span
-                                    class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">cloud_done</span>
-                                <span class="font-body-md">Cloud Infrastructure Automation</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
-            <!-- Main Content Area -->
-            <div class="lg:col-span-8 space-y-xl">
-                <!-- Experience Timeline -->
-                <section class="space-y-lg" id="experience">
-                    <div class="flex items-center gap-md">
-                        <h2 class="font-headline-lg text-headline-lg">Tenure at CSIR-NAL</h2>
-                        <div class="h-[2px] flex-grow bg-white/5"></div>
-                    </div>
-                    <div class="relative pl-8 border-l border-primary/20 space-y-lg">
-                        <div
-                            class="absolute -left-[5px] top-4 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-primary/10">
-                        </div>
-                        <div class="content-card p-lg rounded-2xl">
-                            <h3 class="font-headline-md text-headline-md text-white mb-md">Jobcard Management System
-                            </h3>
-                            <p class="font-body-md text-on-surface-variant mb-lg leading-relaxed">
-                                Architected and deployed a central ERP-style system to manage aircraft assembly
-                                jobcards, replacing legacy manual processes.
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
-                                <div class="flex items-center gap-sm text-on-surface-variant">
-                                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                                    <span class="font-body-md">Digitized 1,000+ technical workflows</span>
-                                </div>
-                                <div class="flex items-center gap-sm text-on-surface-variant">
-                                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                                    <span class="font-body-md">Integrated Angular/Spring Boot stack</span>
-                                </div>
-                                <div class="flex items-center gap-sm text-on-surface-variant">
-                                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                                    <span class="font-body-md">Zero-downtime internal deployment</span>
-                                </div>
-                                <div class="flex items-center gap-sm text-on-surface-variant">
-                                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                                    <span class="font-body-md">Oracle DB data orchestration</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Signature Project -->
-                <section class="space-y-lg" id="projects">
-                    <div class="flex items-center gap-md">
-                        <h2 class="font-headline-lg text-headline-lg">Signature Systems</h2>
-                        <div class="h-[2px] flex-grow bg-white/5"></div>
-                    </div>
-                    <div class="group relative rounded-2xl overflow-hidden content-card border-none shadow-2xl">
-                        <img loading="lazy" alt="Aerospace manufacturing interface visualization"
-                            class="w-full h-[450px] object-cover transition-transform duration-1000 group-hover:scale-105 opacity-40 grayscale-[0.5] group-hover:grayscale-0"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXUIO5dLt8TY0w6dyVX_vTSMdzFGGJYMXLzS8hS0Ii0bgfOLd-ihpBi3RxIl4TkQYKFlIBDiouZ-tKuVfV2zjeGGnSV6VNsI0-Sm9zN-MiUNvqxYCnZfm6QSXiWv_8au6TvKUun3pAcmj_YPtISURC0tOr_tcfVbKU8q25vCBNWXRCHJw4K-jmt8YYetDesNNbwvNTt4LBn6DeyJ6lfqnPrvO2WbK9iaiWLLxrxYvZwXevZyKMvaX7IOjmnyjxnDpk5Qsd2VKvcolz" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent p-lg flex flex-col justify-end">
-                            <div class="flex items-center gap-sm mb-md">
-                                <span
-                                    class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Internal
-                                    Deployment</span>
-                                <span
-                                    class="bg-white/5 text-white/70 border border-white/10 px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Solo
-                                    Developer</span>
-                            </div>
-                            <h3 class="font-display-lg text-3xl md:text-4xl text-white mb-md">Aircraft Jobcard ERP</h3>
-                            <p class="font-body-md text-on-surface-variant max-w-xl mb-lg leading-relaxed">
-                                A comprehensive digitization layer for aerospace manufacturing. Engineered with a Spring
-                                Boot backend and an Angular reactive frontend, managing complex relational data in
-                                Oracle DB.
-                            </p>
-                            <div class="flex flex-wrap gap-lg">
-                                <button
-                                    class="flex items-center gap-sm font-label-sm text-primary hover:text-white transition-colors group">
-                                    <span
-                                        class="material-symbols-outlined text-xl group-hover:-translate-y-0.5 transition-transform">description</span>
-                                    <span class="uppercase tracking-widest text-xs">Technical Specs</span>
-                                </button>
-                                <button
-                                    class="flex items-center gap-sm font-label-sm text-secondary hover:text-white transition-colors group">
-                                    <span
-                                        class="material-symbols-outlined text-xl group-hover:-translate-y-0.5 transition-transform">account_tree</span>
-                                    <span class="uppercase tracking-widest text-xs">Architecture View</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Technical Stack -->
-                <section class="space-y-lg" id="stack">
-                    <div class="flex items-center gap-md">
-                        <h2 class="font-headline-lg text-headline-lg">Core Competencies</h2>
-                        <div class="h-[2px] flex-grow bg-white/5"></div>
-                    </div>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-primary/60 group-hover:text-primary transition-colors">java</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">Java / Spring</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-tertiary/60 group-hover:text-tertiary transition-colors">javascript</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">Angular / TS</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-secondary/60 group-hover:text-secondary transition-colors">database</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">Oracle / SQL</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-error/60 group-hover:text-error transition-colors">cloud</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">Azure Cloud</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-primary/60 group-hover:text-primary transition-colors">psychology</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">ML / NLP</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-tertiary/60 group-hover:text-tertiary transition-colors">terminal</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">Python / C++</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-secondary/60 group-hover:text-secondary transition-colors">settings</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">Git / Docker</span>
-                        </div>
-                        <div
-                            class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
-                            <span
-                                class="material-symbols-outlined text-4xl text-error/60 group-hover:text-error transition-colors">hub</span>
-                            <span class="font-code-md text-xs tracking-wider uppercase">System Arch</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer class="w-full py-xl mt-xl border-t border-white/5 bg-surface-container-lowest" id="contact">
-        <div class="max-w-container-max mx-auto px-xl flex flex-col md:flex-row justify-between items-center gap-lg">
-            <div class="text-center md:text-left">
-                <div class="text-white font-display-lg text-headline-md tracking-tight mb-2 uppercase">qwertyui R S
-                </div>
-                <p class="font-label-sm text-on-surface-variant/60 text-xs tracking-widest uppercase">© 2024 •
-                    Engineered for Performance</p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-xl">
-                <a class="text-on-surface-variant hover:text-white transition-colors flex items-center gap-2 text-xs font-medium uppercase tracking-widest"
-                    href="#">
-                    <span class="material-symbols-outlined text-lg">link</span>
-                    GitHub
-                </a>
-                <a class="text-on-surface-variant hover:text-white transition-colors flex items-center gap-2 text-xs font-medium uppercase tracking-widest"
-                    href="#">
-                    <span class="material-symbols-outlined text-lg">link</span>
-                    LinkedIn
-                </a>
-                <a class="text-on-surface-variant hover:text-white transition-colors flex items-center gap-2 text-xs font-medium uppercase tracking-widest"
-                    href="#">
-                    <span class="material-symbols-outlined text-lg">mail</span>
-                    Email
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script>
-        // Smooth scroll offset for fixed nav
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 100;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Header transparency logic
-        // window.addEventListener('scroll', () => {
-        //     const nav = document.querySelector('nav');
-        //     if (window.scrollY > 100) {
-        //         // nav.classList.add('bg-surface/80', 'backdrop-blur-xl', 'border-b', 'border-white/5');
-        //         // nav.classList.add('bg-[#0e131fcc]')
-        //         // nav.classList.remove('bg-transparent');
-        //         nav.style.backgroundColor = "#0e131fcc";
-        //         nav.style.backgroundColor = "transparent";
-        //         nav.classList.remove('bg-transparent');
-        //     } else {
-        //         nav.classList.remove('bg-surface/80', 'backdrop-blur-xl', 'border-b', 'border-white/5');
-        //         nav.classList.add('bg-transparent');
-        //     }
-        // });
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-
-            if (window.scrollY > 100) {
-                nav.style.backgroundColor = "#0e131fcc";
-            } else {
-                nav.style.backgroundColor = "transparent";
-            }
-        });
-
-        // Reveal animation
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100');
-                    entry.target.classList.remove('opacity-0', 'translate-y-4');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.content-card').forEach(el => {
-            el.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-700');
-            observer.observe(el);
-        });
-    </script>
-</body>
-
-</html>
+</div>
+<div class="mt-lg pt-lg border-t border-white/5">
+<span class="font-label-sm text-on-surface-variant uppercase text-xs tracking-wider">Key Focus Area</span>
+<div class="flex flex-wrap gap-2 mt-sm">
+<span class="skill-badge px-3 py-1 rounded text-xs">ERP System</span>
+<span class="skill-badge px-3 py-1 rounded text-xs">Industrial IoT</span>
+<span class="skill-badge px-3 py-1 rounded text-xs">DevOps</span>
+</div>
+</div>
+</div>
+<!-- Bio -->
+<div class="space-y-md px-base">
+<h2 class="font-headline-lg text-headline-lg text-white">Who I Am</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                    I am a developer who thrives at the intersection of complex logic and user-centric design. With a background in aircraft manufacturing systems, I understand the importance of <span class="text-white">precision, reliability, and scalability</span>.
+                </p>
+<div class="pt-md">
+<h4 class="font-label-sm text-secondary uppercase tracking-widest text-xs mb-md">Tech Interests</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-sm text-on-surface-variant group">
+<span class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">memory</span>
+<span class="font-body-md">Distributed Systems Architecture</span>
+</li>
+<li class="flex items-center gap-sm text-on-surface-variant group">
+<span class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">neurology</span>
+<span class="font-body-md">AI &amp; Natural Language Processing</span>
+</li>
+<li class="flex items-center gap-sm text-on-surface-variant group">
+<span class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">cloud_done</span>
+<span class="font-body-md">Cloud Infrastructure Automation</span>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="lg:col-span-8 space-y-xl">
+<!-- Experience Timeline -->
+<section class="space-y-lg" id="experience">
+<div class="flex items-center gap-md">
+<h2 class="font-headline-lg text-headline-lg">Tenure at CSIR-NAL</h2>
+<div class="h-[2px] flex-grow bg-white/5"></div>
+</div>
+<div class="relative pl-8 border-l border-primary/20 space-y-lg">
+<div class="absolute -left-[5px] top-4 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-primary/10"></div>
+<div class="content-card p-lg rounded-2xl">
+<h3 class="font-headline-md text-headline-md text-white mb-md">Jobcard Management System</h3>
+<p class="font-body-md text-on-surface-variant mb-lg leading-relaxed">
+                            Architected and deployed a central ERP-style system to manage aircraft assembly jobcards, replacing legacy manual processes.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="font-body-md">Digitized 1,000+ technical workflows</span>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="font-body-md">Integrated Angular/Spring Boot stack</span>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="font-body-md">Zero-downtime internal deployment</span>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span class="font-body-md">Oracle DB data orchestration</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Project -->
+<section class="space-y-lg" id="projects">
+<div class="flex items-center gap-md">
+<h2 class="font-headline-lg text-headline-lg">Signature Systems</h2>
+<div class="h-[2px] flex-grow bg-white/5"></div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden content-card border-none shadow-2xl">
+<img alt="Aerospace manufacturing interface visualization" class="w-full h-[450px] object-cover transition-transform duration-1000 group-hover:scale-105 opacity-40 grayscale-[0.5] group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXUIO5dLt8TY0w6dyVX_vTSMdzFGGJYMXLzS8hS0Ii0bgfOLd-ihpBi3RxIl4TkQYKFlIBDiouZ-tKuVfV2zjeGGnSV6VNsI0-Sm9zN-MiUNvqxYCnZfm6QSXiWv_8au6TvKUun3pAcmj_YPtISURC0tOr_tcfVbKU8q25vCBNWXRCHJw4K-jmt8YYetDesNNbwvNTt4LBn6DeyJ6lfqnPrvO2WbK9iaiWLLxrxYvZwXevZyKMvaX7IOjmnyjxnDpk5Qsd2VKvcolz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent p-lg flex flex-col justify-end">
+<div class="flex items-center gap-sm mb-md">
+<span class="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Internal Deployment</span>
+<span class="bg-white/5 text-white/70 border border-white/10 px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Solo Developer</span>
+</div>
+<h3 class="font-display-lg text-3xl md:text-4xl text-white mb-md">Aircraft Jobcard ERP</h3>
+<p class="font-body-md text-on-surface-variant max-w-xl mb-lg leading-relaxed">
+                            A comprehensive digitization layer for aerospace manufacturing. Engineered with a Spring Boot backend and an Angular reactive frontend, managing complex relational data in Oracle DB.
+                        </p>
+<div class="flex flex-wrap gap-lg">
+<button class="flex items-center gap-sm font-label-sm text-primary hover:text-white transition-colors group">
+<span class="material-symbols-outlined text-xl group-hover:-translate-y-0.5 transition-transform">description</span>
+<span class="uppercase tracking-widest text-xs">Technical Specs</span>
+</button>
+<button class="flex items-center gap-sm font-label-sm text-secondary hover:text-white transition-colors group">
+<span class="material-symbols-outlined text-xl group-hover:-translate-y-0.5 transition-transform">account_tree</span>
+<span class="uppercase tracking-widest text-xs">Architecture View</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Stack -->
+<section class="space-y-lg" id="stack">
+<div class="flex items-center gap-md">
+<h2 class="font-headline-lg text-headline-lg">Core Competencies</h2>
+<div class="h-[2px] flex-grow bg-white/5"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-primary/60 group-hover:text-primary transition-colors">java</span>
+<span class="font-code-md text-xs tracking-wider uppercase">Java / Spring</span>
+</div>
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-tertiary/60 group-hover:text-tertiary transition-colors">javascript</span>
+<span class="font-code-md text-xs tracking-wider uppercase">Angular / TS</span>
+</div>
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-secondary/60 group-hover:text-secondary transition-colors">database</span>
+<span class="font-code-md text-xs tracking-wider uppercase">Oracle / SQL</span>
+</div>
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-error/60 group-hover:text-error transition-colors">cloud</span>
+<span class="font-code-md text-xs tracking-wider uppercase">Azure Cloud</span>
+</div>
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-primary/60 group-hover:text-primary transition-colors">psychology</span>
+<span class="font-code-md text-xs tracking-wider uppercase">ML / NLP</span>
+</div>
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-tertiary/60 group-hover:text-tertiary transition-colors">terminal</span>
+<span class="font-code-md text-xs tracking-wider uppercase">Python / C++</span>
+</div>
+<div class="content-card p-md rounded-xl flex flex-col items-center justify-center text-center gap-sm group">
+<span class="material-symbols-outlined text-4xl text-secondary/60 group-hover:text-secondary transition-colors">settings</span>
+<span class="font-code-md text-xs tracking
